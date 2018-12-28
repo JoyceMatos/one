@@ -3,13 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3D8659A4A62397E01767849 /* Pods_oneLife_oneLifeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A86A86F39C6237E6893D30 /* Pods_oneLife_oneLifeTests.framework */; };
+		C7D85968CBB31FD32A2B02A4 /* Pods_oneLife_oneLifeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FE6867E11840C06B37A012 /* Pods_oneLife_oneLifeUITests.framework */; };
+		D7C6A8C2E8DEC24B4D12E251 /* Pods_oneLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491551DBB912DFCCEA3F048A /* Pods_oneLife.framework */; };
+		E90457DB21D5C7EC0048E946 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90457DA21D5C7EC0048E946 /* HomePresenter.swift */; };
+		E90457DD21D5C7FA0048E946 /* FirebaseAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90457DC21D5C7FA0048E946 /* FirebaseAdapter.swift */; };
+		E90457DF21D5C8070048E946 /* FirebaseAdapting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90457DE21D5C8070048E946 /* FirebaseAdapting.swift */; };
+		E90457E721D5C9060048E946 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90457E621D5C9060048E946 /* User.swift */; };
 		E9DA79AE21D0173100ABE6B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA79AD21D0173100ABE6B7 /* AppDelegate.swift */; };
-		E9DA79B021D0173100ABE6B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA79AF21D0173100ABE6B7 /* ViewController.swift */; };
-		E9DA79B321D0173100ABE6B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9DA79B121D0173100ABE6B7 /* Main.storyboard */; };
+		E9DA79B021D0173100ABE6B7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA79AF21D0173100ABE6B7 /* HomeViewController.swift */; };
+		E9DA79B321D0173100ABE6B7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9DA79B121D0173100ABE6B7 /* Home.storyboard */; };
 		E9DA79B521D0173B00ABE6B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9DA79B421D0173B00ABE6B7 /* Assets.xcassets */; };
 		E9DA79B821D0173B00ABE6B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9DA79B621D0173B00ABE6B7 /* LaunchScreen.storyboard */; };
 		E9DA79C321D0173B00ABE6B7 /* oneLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA79C221D0173B00ABE6B7 /* oneLifeTests.swift */; };
@@ -34,10 +41,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		148E945721037539C00C643F /* Pods-oneLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oneLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-oneLife/Pods-oneLife.debug.xcconfig"; sourceTree = "<group>"; };
+		346E8FCCD797FA90FEA2A50A /* Pods-oneLife-oneLifeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oneLife-oneLifeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-oneLife-oneLifeUITests/Pods-oneLife-oneLifeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		491551DBB912DFCCEA3F048A /* Pods_oneLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oneLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5714CD6FCB9072CA526AA269 /* Pods-oneLife-oneLifeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oneLife-oneLifeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-oneLife-oneLifeUITests/Pods-oneLife-oneLifeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6EA4ED9453D9634CB1DC85EC /* Pods-oneLife-oneLifeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oneLife-oneLifeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-oneLife-oneLifeTests/Pods-oneLife-oneLifeTests.release.xcconfig"; sourceTree = "<group>"; };
+		84FE6867E11840C06B37A012 /* Pods_oneLife_oneLifeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oneLife_oneLifeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95B3AFAE11A2FE40AA1F8238 /* Pods-oneLife-oneLifeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oneLife-oneLifeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-oneLife-oneLifeTests/Pods-oneLife-oneLifeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		97A86A86F39C6237E6893D30 /* Pods_oneLife_oneLifeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oneLife_oneLifeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5D4AC2FC5312534402E6151 /* Pods-oneLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oneLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-oneLife/Pods-oneLife.release.xcconfig"; sourceTree = "<group>"; };
+		E90457DA21D5C7EC0048E946 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		E90457DC21D5C7FA0048E946 /* FirebaseAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAdapter.swift; sourceTree = "<group>"; };
+		E90457DE21D5C8070048E946 /* FirebaseAdapting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAdapting.swift; sourceTree = "<group>"; };
+		E90457E621D5C9060048E946 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E9DA79AA21D0173100ABE6B7 /* oneLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oneLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9DA79AD21D0173100ABE6B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9DA79AF21D0173100ABE6B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E9DA79B221D0173100ABE6B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9DA79AF21D0173100ABE6B7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E9DA79B221D0173100ABE6B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		E9DA79B421D0173B00ABE6B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9DA79B721D0173B00ABE6B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9DA79B921D0173B00ABE6B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C6A8C2E8DEC24B4D12E251 /* Pods_oneLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3D8659A4A62397E01767849 /* Pods_oneLife_oneLifeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +90,88 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D85968CBB31FD32A2B02A4 /* Pods_oneLife_oneLifeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		562E5BD4E3DC3FD97A576BC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				491551DBB912DFCCEA3F048A /* Pods_oneLife.framework */,
+				97A86A86F39C6237E6893D30 /* Pods_oneLife_oneLifeTests.framework */,
+				84FE6867E11840C06B37A012 /* Pods_oneLife_oneLifeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A93CA9484674555C00D45E58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				148E945721037539C00C643F /* Pods-oneLife.debug.xcconfig */,
+				C5D4AC2FC5312534402E6151 /* Pods-oneLife.release.xcconfig */,
+				95B3AFAE11A2FE40AA1F8238 /* Pods-oneLife-oneLifeTests.debug.xcconfig */,
+				6EA4ED9453D9634CB1DC85EC /* Pods-oneLife-oneLifeTests.release.xcconfig */,
+				346E8FCCD797FA90FEA2A50A /* Pods-oneLife-oneLifeUITests.debug.xcconfig */,
+				5714CD6FCB9072CA526AA269 /* Pods-oneLife-oneLifeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E90457E021D5C8760048E946 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				E90457DC21D5C7FA0048E946 /* FirebaseAdapter.swift */,
+				E90457E121D5C8760048E946 /* Protocols */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		E90457E121D5C8760048E946 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E90457DE21D5C8070048E946 /* FirebaseAdapting.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E90457E221D5C8760048E946 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E90457E421D5C8960048E946 /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E90457E321D5C87D0048E946 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E9DA79B121D0173100ABE6B7 /* Home.storyboard */,
+				E9DA79B421D0173B00ABE6B7 /* Assets.xcassets */,
+				E9DA79B621D0173B00ABE6B7 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E90457E421D5C8960048E946 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E90457DA21D5C7EC0048E946 /* HomePresenter.swift */,
+				E9DA79AF21D0173100ABE6B7 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E90457E521D5C8F00048E946 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E90457E621D5C9060048E946 /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		E9DA79A121D0173000ABE6B7 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +179,8 @@
 				E9DA79C121D0173B00ABE6B7 /* oneLifeTests */,
 				E9DA79CC21D0173C00ABE6B7 /* oneLifeUITests */,
 				E9DA79AB21D0173100ABE6B7 /* Products */,
+				A93CA9484674555C00D45E58 /* Pods */,
+				562E5BD4E3DC3FD97A576BC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +197,12 @@
 		E9DA79AC21D0173100ABE6B7 /* oneLife */ = {
 			isa = PBXGroup;
 			children = (
+				E90457E521D5C8F00048E946 /* Entities */,
 				E9DA79AD21D0173100ABE6B7 /* AppDelegate.swift */,
-				E9DA79AF21D0173100ABE6B7 /* ViewController.swift */,
-				E9DA79B121D0173100ABE6B7 /* Main.storyboard */,
-				E9DA79B421D0173B00ABE6B7 /* Assets.xcassets */,
-				E9DA79B621D0173B00ABE6B7 /* LaunchScreen.storyboard */,
 				E9DA79B921D0173B00ABE6B7 /* Info.plist */,
+				E90457E321D5C87D0048E946 /* UI */,
+				E90457E221D5C8760048E946 /* Screens */,
+				E90457E021D5C8760048E946 /* Adapters */,
 			);
 			path = oneLife;
 			sourceTree = "<group>";
@@ -132,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9DA79D221D0173C00ABE6B7 /* Build configuration list for PBXNativeTarget "oneLife" */;
 			buildPhases = (
+				87E5439121FD785EE67F139C /* [CP] Check Pods Manifest.lock */,
 				E9DA79A621D0173100ABE6B7 /* Sources */,
 				E9DA79A721D0173100ABE6B7 /* Frameworks */,
 				E9DA79A821D0173100ABE6B7 /* Resources */,
+				93C166E833048BF80C21CAF0 /* [CP] Embed Pods Frameworks */,
+				8C50AEC6EB0ADCDA4E6C3471 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9DA79D521D0173C00ABE6B7 /* Build configuration list for PBXNativeTarget "oneLifeTests" */;
 			buildPhases = (
+				158BC5EC08864770DACA7833 /* [CP] Check Pods Manifest.lock */,
 				E9DA79BA21D0173B00ABE6B7 /* Sources */,
 				E9DA79BB21D0173B00ABE6B7 /* Frameworks */,
 				E9DA79BC21D0173B00ABE6B7 /* Resources */,
+				BCBAF60B1206CB4B0125F9B9 /* [CP] Embed Pods Frameworks */,
+				4C4395F2649A1A1334DF6A86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +273,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9DA79D821D0173C00ABE6B7 /* Build configuration list for PBXNativeTarget "oneLifeUITests" */;
 			buildPhases = (
+				6F2117F5E976E5C12742053B /* [CP] Check Pods Manifest.lock */,
 				E9DA79C521D0173C00ABE6B7 /* Sources */,
 				E9DA79C621D0173C00ABE6B7 /* Frameworks */,
 				E9DA79C721D0173C00ABE6B7 /* Resources */,
+				99B79769A4A95EAC8C998B8C /* [CP] Embed Pods Frameworks */,
+				C19F17B47FE2A2C3E676B912 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,19 +302,22 @@
 				TargetAttributes = {
 					E9DA79A921D0173100ABE6B7 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 					};
 					E9DA79BD21D0173B00ABE6B7 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 						TestTargetID = E9DA79A921D0173100ABE6B7;
 					};
 					E9DA79C821D0173C00ABE6B7 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 						TestTargetID = E9DA79A921D0173100ABE6B7;
 					};
 				};
 			};
 			buildConfigurationList = E9DA79A521D0173000ABE6B7 /* Build configuration list for PBXProject "oneLife" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -231,7 +343,7 @@
 			files = (
 				E9DA79B821D0173B00ABE6B7 /* LaunchScreen.storyboard in Resources */,
 				E9DA79B521D0173B00ABE6B7 /* Assets.xcassets in Resources */,
-				E9DA79B321D0173100ABE6B7 /* Main.storyboard in Resources */,
+				E9DA79B321D0173100ABE6B7 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,12 +363,190 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		158BC5EC08864770DACA7833 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-oneLife-oneLifeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C4395F2649A1A1334DF6A86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-oneLife-oneLifeTests/Pods-oneLife-oneLifeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F2117F5E976E5C12742053B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-oneLife-oneLifeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87E5439121FD785EE67F139C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-oneLife-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C50AEC6EB0ADCDA4E6C3471 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-oneLife/Pods-oneLife-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93C166E833048BF80C21CAF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-oneLife/Pods-oneLife-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-oneLife/Pods-oneLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99B79769A4A95EAC8C998B8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-oneLife-oneLifeUITests/Pods-oneLife-oneLifeUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-oneLife-oneLifeUITests/Pods-oneLife-oneLifeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCBAF60B1206CB4B0125F9B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-oneLife-oneLifeTests/Pods-oneLife-oneLifeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-oneLife-oneLifeTests/Pods-oneLife-oneLifeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C19F17B47FE2A2C3E676B912 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-oneLife-oneLifeUITests/Pods-oneLife-oneLifeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E9DA79A621D0173100ABE6B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9DA79B021D0173100ABE6B7 /* ViewController.swift in Sources */,
+				E90457DF21D5C8070048E946 /* FirebaseAdapting.swift in Sources */,
+				E90457DB21D5C7EC0048E946 /* HomePresenter.swift in Sources */,
+				E90457E721D5C9060048E946 /* User.swift in Sources */,
+				E9DA79B021D0173100ABE6B7 /* HomeViewController.swift in Sources */,
+				E90457DD21D5C7FA0048E946 /* FirebaseAdapter.swift in Sources */,
 				E9DA79AE21D0173100ABE6B7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,12 +583,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E9DA79B121D0173100ABE6B7 /* Main.storyboard */ = {
+		E9DA79B121D0173100ABE6B7 /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E9DA79B221D0173100ABE6B7 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 		E9DA79B621D0173B00ABE6B7 /* LaunchScreen.storyboard */ = {
@@ -420,23 +710,20 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		E9DA79D321D0173C00ABE6B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148E945721037539C00C643F /* Pods-oneLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A95Z7XMH9W;
 				INFOPLIST_FILE = oneLife/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joycematos.oneLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -446,15 +733,13 @@
 		};
 		E9DA79D421D0173C00ABE6B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5D4AC2FC5312534402E6151 /* Pods-oneLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A95Z7XMH9W;
 				INFOPLIST_FILE = oneLife/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joycematos.oneLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -464,17 +749,14 @@
 		};
 		E9DA79D621D0173C00ABE6B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95B3AFAE11A2FE40AA1F8238 /* Pods-oneLife-oneLifeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A95Z7XMH9W;
 				INFOPLIST_FILE = oneLifeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joycematos.oneLifeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -485,17 +767,14 @@
 		};
 		E9DA79D721D0173C00ABE6B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EA4ED9453D9634CB1DC85EC /* Pods-oneLife-oneLifeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A95Z7XMH9W;
 				INFOPLIST_FILE = oneLifeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joycematos.oneLifeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -506,16 +785,13 @@
 		};
 		E9DA79D921D0173C00ABE6B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 346E8FCCD797FA90FEA2A50A /* Pods-oneLife-oneLifeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A95Z7XMH9W;
 				INFOPLIST_FILE = oneLifeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joycematos.oneLifeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -526,16 +802,13 @@
 		};
 		E9DA79DA21D0173C00ABE6B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5714CD6FCB9072CA526AA269 /* Pods-oneLife-oneLifeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A95Z7XMH9W;
 				INFOPLIST_FILE = oneLifeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joycematos.oneLifeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
