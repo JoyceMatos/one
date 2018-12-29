@@ -6,8 +6,10 @@
 //  Copyright © 2018 Joyce Matos. All rights reserved.
 //
 
+import RxSwift
+
 protocol FirebaseAdapting: class {
-    func logIn(_ user: User, password: String, completion: @escaping (User?) -> Void)
-    func create(_ user: User, password: String, completion: @escaping (User?) -> Void)
+    func logIn(_ user: User, password: String) -> Single<User>
+    func create(_ user: User, password: String) -> Single<User>
     func logOut()
 }

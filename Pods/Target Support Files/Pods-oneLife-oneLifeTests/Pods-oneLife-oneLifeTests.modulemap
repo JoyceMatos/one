@@ -1,6 +1,0 @@
-framework module Pods_oneLife_oneLifeTests {
-  umbrella header "Pods-oneLife-oneLifeTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
