@@ -9,5 +9,6 @@
 struct Constants {
     struct Firebase {
         static let users = "users"
+        static let lists = "lists"
     }
 }

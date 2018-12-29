@@ -25,7 +25,7 @@ class FirebaseAdapter: FirebaseAdapting {
         }
     }
 
-    // Might not even need to return anything here. Just handle error
+    // Note - Might not even need to return anything here. Just handle error
     func create(_ user: User, password: String) -> Single<User> {
         return Single<User>.create { single -> Disposable in
             Auth.auth().createUser(withEmail: user.email, password: password, completion: { (newUser, error) in
@@ -43,6 +43,15 @@ class FirebaseAdapter: FirebaseAdapting {
             return Disposables.create()
         }
     }
+    
+//    func createList(_ list: List, userId: String) -> Single<List> {
+//        return Single<List>.create { single -> Disposable in
+////            ref.child(Constants.Firebase.lists).child(userId).childByAutoId().setValue(["lists:"])
+////            ref.child(Constants.Firebase.users).child(userId).setValue(["lists": list.serialize()])
+//
+//            return Disposables.create()
+//        }
+//    }
     
     func logOut() {
         try? Auth.auth().signOut()
