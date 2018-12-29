@@ -11,7 +11,29 @@ import Firebase
 class FirebaseAdapter: FirebaseAdapting {
     private var ref = Database.database().reference()
     
-    func authenticate(_ newUser: User?, password: String, completion: @escaping (Bool, User?) -> Void) {
-        
+    func logIn(_ user: User, password: String, completion: @escaping (User?) -> Void) {
+        Auth.auth().signIn(withEmail: user.email, password: password, completion: { (currentUser, error) in
+            if error == nil {
+                completion(user)
+            } else {
+                completion(nil)
+            }
+        })
+    }
+    
+    func create(_ user: User, password: String, completion: @escaping (User?) -> Void) {
+        Auth.auth().createUser(withEmail: user.email, password: password, completion: { (newUser, error) in
+            if let userId = newUser?.uid {
+                var user = user
+                user.id = userId
+                completion(user)
+            } else {
+                completion(nil)
+            }
+        })
+    }
+    
+    func logOut() {
+        try? Auth.auth().signOut()
     }
 }

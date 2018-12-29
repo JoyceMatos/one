@@ -14,6 +14,8 @@
 		E90457DD21D5C7FA0048E946 /* FirebaseAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90457DC21D5C7FA0048E946 /* FirebaseAdapter.swift */; };
 		E90457DF21D5C8070048E946 /* FirebaseAdapting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90457DE21D5C8070048E946 /* FirebaseAdapting.swift */; };
 		E90457E721D5C9060048E946 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90457E621D5C9060048E946 /* User.swift */; };
+		E971911E21D7DF8400A80F34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E971911D21D7DF8400A80F34 /* Constants.swift */; };
+		E971912121D7F4E000A80F34 /* Firebase+RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E971912021D7F4E000A80F34 /* Firebase+RxSwift.swift */; };
 		E9DA79AE21D0173100ABE6B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA79AD21D0173100ABE6B7 /* AppDelegate.swift */; };
 		E9DA79B021D0173100ABE6B7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA79AF21D0173100ABE6B7 /* HomeViewController.swift */; };
 		E9DA79B321D0173100ABE6B7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9DA79B121D0173100ABE6B7 /* Home.storyboard */; };
@@ -54,6 +56,8 @@
 		E90457DC21D5C7FA0048E946 /* FirebaseAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAdapter.swift; sourceTree = "<group>"; };
 		E90457DE21D5C8070048E946 /* FirebaseAdapting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAdapting.swift; sourceTree = "<group>"; };
 		E90457E621D5C9060048E946 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E971911D21D7DF8400A80F34 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E971912021D7F4E000A80F34 /* Firebase+RxSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+RxSwift.swift"; sourceTree = "<group>"; };
 		E9DA79AA21D0173100ABE6B7 /* oneLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oneLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9DA79AD21D0173100ABE6B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9DA79AF21D0173100ABE6B7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +176,14 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		E971911F21D7F4A800A80F34 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E971912021D7F4E000A80F34 /* Firebase+RxSwift.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E9DA79A121D0173000ABE6B7 = {
 			isa = PBXGroup;
 			children = (
@@ -197,12 +209,14 @@
 		E9DA79AC21D0173100ABE6B7 /* oneLife */ = {
 			isa = PBXGroup;
 			children = (
+				E971911F21D7F4A800A80F34 /* Extensions */,
 				E90457E521D5C8F00048E946 /* Entities */,
 				E9DA79AD21D0173100ABE6B7 /* AppDelegate.swift */,
 				E9DA79B921D0173B00ABE6B7 /* Info.plist */,
 				E90457E321D5C87D0048E946 /* UI */,
 				E90457E221D5C8760048E946 /* Screens */,
 				E90457E021D5C8760048E946 /* Adapters */,
+				E971911D21D7DF8400A80F34 /* Constants.swift */,
 			);
 			path = oneLife;
 			sourceTree = "<group>";
@@ -546,6 +560,8 @@
 				E90457DB21D5C7EC0048E946 /* HomePresenter.swift in Sources */,
 				E90457E721D5C9060048E946 /* User.swift in Sources */,
 				E9DA79B021D0173100ABE6B7 /* HomeViewController.swift in Sources */,
+				E971912121D7F4E000A80F34 /* Firebase+RxSwift.swift in Sources */,
+				E971911E21D7DF8400A80F34 /* Constants.swift in Sources */,
 				E90457DD21D5C7FA0048E946 /* FirebaseAdapter.swift in Sources */,
 				E9DA79AE21D0173100ABE6B7 /* AppDelegate.swift in Sources */,
 			);

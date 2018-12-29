@@ -7,7 +7,7 @@
 //
 
 struct User {
-    var id: String
+    var id: String?
     let name: String
     let email: String
     

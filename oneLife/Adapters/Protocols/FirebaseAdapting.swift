@@ -7,5 +7,7 @@
 //
 
 protocol FirebaseAdapting: class {
-    func authenticate(_ newUser: User?, password: String, completion: @escaping (Bool, User?) -> Void)
+    func logIn(_ user: User, password: String, completion: @escaping (User?) -> Void)
+    func create(_ user: User, password: String, completion: @escaping (User?) -> Void)
+    func logOut()
 }
