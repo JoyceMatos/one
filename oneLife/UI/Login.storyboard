@@ -36,6 +36,9 @@
                                 <rect key="frame" x="166" y="347" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log in"/>
+                                <connections>
+                                    <action selector="didTapLogin:" destination="NN9-mR-564" eventType="touchUpInside" id="MA7-sa-QHW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BnH-A6-IFH">
                                 <rect key="frame" x="96" y="156" width="41" height="21"/>
@@ -56,25 +59,38 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
-                                    <segue destination="TfB-L5-u0X" kind="showDetail" id="WMH-em-wmf"/>
+                                    <segue destination="TfB-L5-u0X" kind="show" id="WMH-em-wmf"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="TwH-KH-bFf"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="v0Z-Xh-WAG" id="DRn-DJ-BY7"/>
+                        <outlet property="passwordTextField" destination="ZHk-IT-vhx" id="Vf5-YJ-fqg"/>
+                        <segue destination="QyQ-Zh-s8q" kind="show" identifier="showHome" id="9sQ-hj-0ai"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="prP-0j-IBV" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-20" y="-126.38680659670166"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--SignUp-->
         <scene sceneID="NWe-aX-zDv">
             <objects>
-                <viewControllerPlaceholder id="TfB-L5-u0X" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="SignUp" id="TfB-L5-u0X" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jn1-Np-egM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="718" y="-127"/>
+            <point key="canvasLocation" x="747" y="-209"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="JSO-1u-q6b">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="QyQ-Zh-s8q" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JKl-qr-kwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="754" y="-47"/>
         </scene>
     </scenes>
 </document>

@@ -6,4 +6,24 @@
 //  Copyright © 2018 Joyce Matos. All rights reserved.
 //
 
-import Foundation
+final class LoginPresenter {
+    unowned let view: LoginViewable
+    unowned let firebaseAdapter: FirebaseAdapting
+    
+    init(view: LoginViewable,
+         firebaseAdapter: FirebaseAdapting) {
+        self.view = view
+        self.firebaseAdapter = firebaseAdapter
+    }
+    
+    func didTapLogin() {
+        
+        guard let email = view.email, let password = view.password else {
+            // TODO: - Show alert
+            return
+        }
+        
+        firebaseAdapter.logIn(email, password: password)
+
+    }
+}

@@ -8,10 +8,19 @@
 
 struct User {
     var id: String?
-    let name: String
+    let name: String?
     let email: String
     
+    init(id: String? = nil, name: String?, email: String) {
+        self.id = id
+        self.name = name
+        self.email = email
+    }
+    
     func serialize() -> [String: Any] {
+        guard let name = name else {
+            return ["email": email]
+        }
         return ["name": name, "email": email]
     }
 }

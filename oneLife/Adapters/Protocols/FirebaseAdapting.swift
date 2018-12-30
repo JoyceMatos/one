@@ -9,7 +9,7 @@
 import RxSwift
 
 protocol FirebaseAdapting: class {
-    func logIn(_ user: User, password: String) -> Single<User>
+    func logIn(_ email: String, password: String) -> Single<User>
     func create(_ user: User, password: String) -> Single<User>
     func logOut()
 }

@@ -12,12 +12,13 @@ import RxSwift
 class FirebaseAdapter: FirebaseAdapting {
     private var ref = Database.database().reference()
     
-    func logIn(_ user: User, password: String) -> Single<User> {
+    func logIn(_ email: String, password: String) -> Single<User> {
         return Single<User>.create { single -> Disposable in
-            Auth.auth().signIn(withEmail: user.email, password: password, completion: { (currentUser, error) in
+            Auth.auth().signIn(withEmail: email, password: password, completion: { (result, error) in
                 if let error = error {
                     single(.error(error))
                 } else {
+                    let user = User(id: result!.user.uid, name: nil, email: email)
                     single(.success(user))
                 }
             })
@@ -28,8 +29,8 @@ class FirebaseAdapter: FirebaseAdapting {
     // Note - Might not even need to return anything here. Just handle error
     func create(_ user: User, password: String) -> Single<User> {
         return Single<User>.create { single -> Disposable in
-            Auth.auth().createUser(withEmail: user.email, password: password, completion: { (newUser, error) in
-                if let userId = newUser?.uid {
+            Auth.auth().createUser(withEmail: user.email, password: password, completion: { (result, error) in
+                if let userId = result?.user.uid {
                     var user = user
                     user.id = userId
                     

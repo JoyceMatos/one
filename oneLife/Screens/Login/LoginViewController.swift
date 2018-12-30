@@ -8,23 +8,29 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, LoginViewable {
+    typealias Presenter = LoginPresenter
+    typealias View = LoginViewable
+    
+    lazy var presenter = { Injector.instance.container.resolve(LoginPresenter.self, argument: self as LoginViewable)! }()
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    var email: String! {
+        return emailTextField.text
+    }
+    
+    var password: String! {
+        return passwordTextField.text
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func didTapLogin(_ sender: Any) {
+        presenter.didTapLogin()
     }
-    */
-
 }
