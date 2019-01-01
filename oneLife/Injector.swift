@@ -25,6 +25,12 @@ final class Injector {
         container.register(SignUpPresenter.self) { r, view in
             SignUpPresenter(view: view, firebaseAdapter: r.resolve(FirebaseAdapting.self)!, mainScheduler: r.resolve(MainScheduler.self)!)
         }
+        container.register(HomePresenter.self) { r, view in
+            HomePresenter(view: view)
+        }
+        container.register(AddListPresenter.self) { r, view in
+            AddListPresenter(view: view)
+        }
         
         container.autoregister(FirebaseAdapting.self, initializer: FirebaseAdapter.init).inObjectScope(.container)
         

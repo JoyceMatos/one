@@ -69,7 +69,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="v0Z-Xh-WAG" id="DRn-DJ-BY7"/>
                         <outlet property="passwordTextField" destination="ZHk-IT-vhx" id="Vf5-YJ-fqg"/>
-                        <segue destination="QyQ-Zh-s8q" kind="show" identifier="showHome" id="9sQ-hj-0ai"/>
+                        <segue destination="QyQ-Zh-s8q" kind="show" identifier="showTabBar" id="9sQ-hj-0ai"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="prP-0j-IBV" sceneMemberID="firstResponder"/>
@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="747" y="-209"/>
         </scene>
-        <!--Home-->
+        <!--TabBar-->
         <scene sceneID="JSO-1u-q6b">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="QyQ-Zh-s8q" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="TabBar" id="QyQ-Zh-s8q" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JKl-qr-kwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="754" y="-47"/>

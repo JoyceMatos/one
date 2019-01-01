@@ -35,6 +35,6 @@ class LoginViewController: UIViewController, LoginViewable {
     }
     
     func showHome() {
-        performSegue(withIdentifier: "showHome", sender: nil)
+        performSegue(withIdentifier: "showTabBar", sender: nil)
     }
 }

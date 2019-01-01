@@ -7,5 +7,17 @@
 //
 
 class HomePresenter {
+    unowned let view: HomeViewable
     
+    init(view: HomeViewable) {
+        self.view = view
+    }
+    
+    func didTapList() {
+        view.showList()
+    }
+    
+    func didTapAddList() {
+        view.showAddList()
+    }
 }
