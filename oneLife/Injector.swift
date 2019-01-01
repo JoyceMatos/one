@@ -20,7 +20,7 @@ final class Injector {
     
     func registerDependencies() {
         container.register(LoginPresenter.self) { r, view in
-            LoginPresenter(view: view, firebaseAdapter: r.resolve(FirebaseAdapting.self)!)
+            LoginPresenter(view: view, firebaseAdapter: r.resolve(FirebaseAdapting.self)!, mainScheduler: r.resolve(MainScheduler.self)!)
         }
         container.register(SignUpPresenter.self) { r, view in
             SignUpPresenter(view: view, firebaseAdapter: r.resolve(FirebaseAdapting.self)!, mainScheduler: r.resolve(MainScheduler.self)!)

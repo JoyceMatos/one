@@ -33,4 +33,8 @@ class LoginViewController: UIViewController, LoginViewable {
     @IBAction func didTapLogin(_ sender: Any) {
         presenter.didTapLogin()
     }
+    
+    func showHome() {
+        performSegue(withIdentifier: "showHome", sender: nil)
+    }
 }

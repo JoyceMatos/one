@@ -37,9 +37,8 @@ final class SignUpPresenter {
             .observeOn(mainScheduler)
             .subscribe(onSuccess: { user in
                 self.view.showHome()
-                // Segue to home screen
             }, onError: { error in
-                // Handle erroe
+                // TODO: - Handle error
             })
     }
 }

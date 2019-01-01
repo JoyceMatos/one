@@ -9,4 +9,6 @@
 protocol LoginViewable: class {
     var email: String! { get }
     var password: String! { get }
+    
+    func showHome()
 }
