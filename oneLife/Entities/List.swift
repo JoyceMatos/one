@@ -10,11 +10,16 @@ struct List {
     var name: String
     var items: [Item]?
     
+    init(name: String,
+         items: [Item]? = nil) {
+        self.name = name
+        self.items = items
+    }
+    
     func serialize() -> [String: Any] {
         guard let items = items else {
             return ["name": name]
         }
-        
         return ["name": name, "items": items]
     }
 }

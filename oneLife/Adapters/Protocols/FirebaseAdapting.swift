@@ -11,5 +11,6 @@ import RxSwift
 protocol FirebaseAdapting: class {
     func logIn(_ email: String, password: String) -> Single<User>
     func create(_ user: User, password: String) -> Single<User>
+    func createList(_ list: List, userId: String) -> Completable
     func logOut()
 }

@@ -8,9 +8,16 @@
 
 class HomePresenter {
     unowned let view: HomeViewable
+    unowned let firebaseAdapter: FirebaseAdapting
     
-    init(view: HomeViewable) {
+    init(view: HomeViewable,
+         firebaseAdapter: FirebaseAdapting) {
         self.view = view
+        self.firebaseAdapter = firebaseAdapter
+    }
+    
+    func fetchLists() {
+        
     }
     
     func didTapList() {

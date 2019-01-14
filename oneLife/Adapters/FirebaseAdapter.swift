@@ -45,14 +45,38 @@ class FirebaseAdapter: FirebaseAdapting {
         }
     }
     
-//    func createList(_ list: List, userId: String) -> Single<List> {
-//        return Single<List>.create { single -> Disposable in
-////            ref.child(Constants.Firebase.lists).child(userId).childByAutoId().setValue(["lists:"])
-////            ref.child(Constants.Firebase.users).child(userId).setValue(["lists": list.serialize()])
-//
-//            return Disposables.create()
-//        }
-//    }
+    func createList(_ list: List, userId: String) -> Completable {
+        return Completable.create { completable in
+            let listRef = self.ref.child(Constants.Firebase.lists).child(userId).childByAutoId()
+            listRef.setValue(list.serialize(), withCompletionBlock: { error, ref in
+                if let error = error {
+                    completable(.error(error))
+                }
+            })
+            
+            // Figure out how to get this to add new value instead of overwrite existing one
+            self.ref.child(Constants.Firebase.users).child(userId).child(Constants.Firebase.lists).setValue([listRef.key: true], withCompletionBlock: { error, ref in
+                if let error = error {
+                    completable(.error(error))
+                }
+                
+                completable(.completed)
+            })
+            
+            return Disposables.create()
+        }
+    }
+    
+    func fetchLists(_ userId: String) -> Single<[List]> {
+        return Single<[List]>.create { single -> Disposable in
+            self.ref.child(Constants.Firebase.users).child(userId).child(Constants.Firebase.lists).observeSingleEvent(of: .value, with: { snapshot in
+                
+                snapshot.value as! [String]
+                
+            })
+            return Disposables.create()
+        }
+    }
     
     func logOut() {
         try? Auth.auth().signOut()

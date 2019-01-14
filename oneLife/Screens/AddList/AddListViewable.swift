@@ -7,5 +7,6 @@
 //
 
 protocol AddListViewable: class {
+    var listTitle: String! { get }
     func dismiss()
 }

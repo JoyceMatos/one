@@ -32,6 +32,8 @@
 		E971914821DC165F00A80F34 /* AddListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E971914721DC165F00A80F34 /* AddListViewController.swift */; };
 		E971914A21DC166F00A80F34 /* AddListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E971914921DC166F00A80F34 /* AddListPresenter.swift */; };
 		E971914C21DC167800A80F34 /* AddListViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E971914B21DC167800A80F34 /* AddListViewable.swift */; };
+		E971914F21EC058F00A80F34 /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E971914E21EC058F00A80F34 /* UserInteractor.swift */; };
+		E971915221EC05A000A80F34 /* UserInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E971915121EC05A000A80F34 /* UserInteracting.swift */; };
 		E9DA79AE21D0173100ABE6B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA79AD21D0173100ABE6B7 /* AppDelegate.swift */; };
 		E9DA79B021D0173100ABE6B7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA79AF21D0173100ABE6B7 /* HomeViewController.swift */; };
 		E9DA79B321D0173100ABE6B7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9DA79B121D0173100ABE6B7 /* Home.storyboard */; };
@@ -73,6 +75,8 @@
 		E971914721DC165F00A80F34 /* AddListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListViewController.swift; sourceTree = "<group>"; };
 		E971914921DC166F00A80F34 /* AddListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListPresenter.swift; sourceTree = "<group>"; };
 		E971914B21DC167800A80F34 /* AddListViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListViewable.swift; sourceTree = "<group>"; };
+		E971914E21EC058F00A80F34 /* UserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
+		E971915121EC05A000A80F34 /* UserInteracting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteracting.swift; sourceTree = "<group>"; };
 		E9DA79AA21D0173100ABE6B7 /* oneLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oneLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9DA79AD21D0173100ABE6B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9DA79AF21D0173100ABE6B7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 		E90457E221D5C8760048E946 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E971914D21EC054D00A80F34 /* Interactors */,
 				E971913121D80C3900A80F34 /* SignUp */,
 				E971912621D80A3200A80F34 /* Login */,
 				E90457E421D5C8960048E946 /* Home */,
@@ -208,6 +213,23 @@
 				E971914B21DC167800A80F34 /* AddListViewable.swift */,
 			);
 			path = AddList;
+			sourceTree = "<group>";
+		};
+		E971914D21EC054D00A80F34 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				E971914E21EC058F00A80F34 /* UserInteractor.swift */,
+				E971915021EC059300A80F34 /* Protocols */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		E971915021EC059300A80F34 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E971915121EC05A000A80F34 /* UserInteracting.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		E9DA79A121D0173000ABE6B7 = {
@@ -389,12 +411,14 @@
 				E971914821DC165F00A80F34 /* AddListViewController.swift in Sources */,
 				E971913021D80C3000A80F34 /* SignUpPresenter.swift in Sources */,
 				E9DA79B021D0173100ABE6B7 /* HomeViewController.swift in Sources */,
+				E971914F21EC058F00A80F34 /* UserInteractor.swift in Sources */,
 				E971914121DC0E4E00A80F34 /* HomeViewable.swift in Sources */,
 				E971911E21D7DF8400A80F34 /* Constants.swift in Sources */,
 				E90457DD21D5C7FA0048E946 /* FirebaseAdapter.swift in Sources */,
 				E9DA79AE21D0173100ABE6B7 /* AppDelegate.swift in Sources */,
 				E971913721D84B8E00A80F34 /* LoginViewable.swift in Sources */,
 				E971913321D80C5100A80F34 /* SignUpViewController.swift in Sources */,
+				E971915221EC05A000A80F34 /* UserInteracting.swift in Sources */,
 				E971912A21D80A5E00A80F34 /* LoginViewController.swift in Sources */,
 				E971914C21DC167800A80F34 /* AddListViewable.swift in Sources */,
 			);

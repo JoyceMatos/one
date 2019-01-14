@@ -10,15 +10,18 @@ import RxSwift
 
 final class LoginPresenter {
     unowned let view: LoginViewable
+    unowned let userInteractor: UserInteracting
     unowned let firebaseAdapter: FirebaseAdapting
     unowned let mainScheduler: MainScheduler
     
     let disposeBag = DisposeBag()
     
     init(view: LoginViewable,
+         userInteractor: UserInteracting,
          firebaseAdapter: FirebaseAdapting,
          mainScheduler: MainScheduler) {
         self.view = view
+        self.userInteractor = userInteractor
         self.firebaseAdapter = firebaseAdapter
         self.mainScheduler = mainScheduler
     }
@@ -32,6 +35,7 @@ final class LoginPresenter {
         firebaseAdapter.logIn(email, password: password)
         .observeOn(mainScheduler)
         .subscribe(onSuccess: { user in
+            self.userInteractor.user = user
             self.view.showHome()
         }, onError: { error in
             // TODO: - Handle error
